@@ -1,0 +1,15 @@
+<%- include ('../partials/header'); %>
+
+<main class="main container">   
+    <div class="row">
+        <% data.forEach(item => { %>
+            <div class="col-md-4">
+                <a href="/allGames/<%= item.id %>">
+                    <p> <%= item.name %></p>
+                </a>
+            </div>
+        <% }) %>
+    </div>
+</main>
+
+<%- include ('../partials/header'); %>
